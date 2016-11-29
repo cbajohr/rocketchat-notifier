@@ -51,7 +51,7 @@ Optional parameters:
 Use the optional parameters as named parameters.
 
 Example:
-```rails
+```ruby
 RocketChatNotifier.notify("my message\nwith second line", emoji: 'ok', event: 'my notifier', attachment: {title: 'my att. title', text: 'attachment text', color: '#FF0000'})
 ```
 
