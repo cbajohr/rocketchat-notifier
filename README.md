@@ -38,14 +38,15 @@ Fire a notification with: `RocketChatNotifier.notify "my message"`
 Optional parameters:
 * emoji: set a avatar emoji (`ok`, or `smile` e.g.)
 * event: set a eventname (will be shown as "username" in rocket.chat)
-* attachment: set an attachment ```
-{
-  "title": "Rocket.Chat",
-  "title_link": "https://rocket.chat",
-  "text": "Rocket.Chat, the best open source chat",
-  "image_url": "https://rocket.chat/images/mockup.png",
-  "color": "#764FA5"
-}
+* attachment: set an attachment
+```
+  {
+    "title": "Rocket.Chat",
+    "title_link": "https://rocket.chat",
+    "text": "Rocket.Chat, the best open source chat",
+    "image_url": "https://rocket.chat/images/mockup.png",
+    "color": "#764FA5"
+  }
 ```
 
 Use the optional parameters as named parameters.
