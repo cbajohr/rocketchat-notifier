@@ -51,10 +51,9 @@ Optional parameters:
 Use the optional parameters as named parameters.
 
 Example:
+
 ```ruby
-
-RocketChatNotifier.notify("my message\nwith second line", emoji: 'ok', event: 'my notifier', attachment: {title: 'my att. title', text: 'attachment text', color: '#FF0000'})
-
+RocketChatNotifier.notify "my message\nwith second line", emoji: 'ok', event: 'my notifier', attachment: {title: 'my att. title', text: 'attachment text', color: '#FF0000'}
 ```
 
 Additionally you will need a parser script for your rocket.chat for the incoming webhook integration.
