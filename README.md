@@ -67,11 +67,6 @@ https://github.com/cbajohr/rails-rocket-chat-notifier/wiki/rocket.chat---incomin
 
 Example JSON that is pushed by the gem.
 
-Possible 'event -> hook' states are:
-* starting
-* failed
-* finished
-
 Simple:
 ```JSON
 {
@@ -86,7 +81,7 @@ Simple:
 }
 ```
 
-Extended with optional parameters:
+Extended with some optional parameters:
 ```JSON
 {
   "message": "my message\nwith second line",
