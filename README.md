@@ -38,8 +38,8 @@ Fire a notification with: `RocketChatNotifier.notify "my message"`
 Optional parameters:
 * emoji: set a avatar emoji (`ok`, or `smile` e.g.)
 * event: set a eventname (will be shown as "username" in rocket.chat)
-* attachment: set an attachment
-```
+* attachment: set an attachment hash. Example:
+```ruby
   {
     "title": "Rocket.Chat",
     "title_link": "https://rocket.chat",
