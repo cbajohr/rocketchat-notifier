@@ -21,9 +21,11 @@ create an initializer config *rocket-chat-notifier.rb* to *config/initializers/*
 
 ```ruby
 RocketChatNotifier.configure do |config|
-  config.webhook_url = "https://my.rocket.chat/hook/WEBHOOK-TOKEN" # replace with your incoming rocket chat webhook url
+  # replace webhook_url with your incoming rocket chat webhook url
+  config.webhook_url = "https://my.rocket.chat/hook/WEBHOOK-TOKEN"
 
-  # config.verbose_mode = true # enable verbose debug information in Log | default: false
+  # enable verbose debug information with the following line | default: false
+  # config.verbose_mode = true
 end
 ```
 
