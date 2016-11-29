@@ -1,4 +1,4 @@
-# capistrano-rocket-chat
+# Rocket.Chat Notifier Gem
 rocket.chat notifier gem, for firing event notifications to a rocket chat incoming webhook.
 
 ## Installation
