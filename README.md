@@ -36,7 +36,7 @@ And you are ready to go
 Fire a notification with: `RocketChatNotifier.notify "my message"`
 
 Optional parameters:
-* emoji: set a avatar emoji (`ok`, or `smile` e.g.)
+* emoji: set a avatar emoji (`:ok:`, or `:smile:` e.g.  See http://emoji.codes/ for a quick lookup)
 * event: set a eventname (will be shown as "username" in rocket.chat)
 * attachment: set an attachment hash. Example:
 ```ruby
@@ -54,7 +54,7 @@ Use the optional parameters as named parameters.
 Example:
 
 ```ruby
-RocketChatNotifier.notify 'my message', emoji: 'ok', event: 'my notifier', attachment: {title: 'my att. title', text: 'attachment text', color: '#FF0000'}
+RocketChatNotifier.notify 'my message', emoji: ':ok:', event: 'my notifier', attachment: {title: 'my att. title', text: 'attachment text', color: '#FF0000'}
 ```
 
 Additionally you will need a parser script for your rocket.chat for the incoming webhook integration.
@@ -72,7 +72,7 @@ Simple:
 {
   "message": "my message\nwith second line",
   "event": "my notifier",
-  "emoji": "ok",
+  "emoji": ":ok:",
   "attachment": {
     "title": "my att. title",
     "text": "attachment text",
@@ -86,7 +86,7 @@ Extended with some optional parameters:
 {
   "message": "my message\nwith second line",
   "event": "my notifier",
-  "emoji": "ok",
+  "emoji": ":ok:",
   "attachment": {
     "title": "my att. title",
     "text": "attachment text",
