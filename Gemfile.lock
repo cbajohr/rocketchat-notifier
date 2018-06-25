@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    rocketchat-notifier (0.1.0)
+    rocketchat-notifier (0.1.1)
       httparty (~> 0.13.7, >= 0.13.7)
 
 GEM
@@ -10,9 +10,9 @@ GEM
     httparty (0.13.7)
       json (~> 1.8)
       multi_xml (>= 0.5.2)
-    json (1.8.3)
+    json (1.8.6)
     minitest (5.9.1)
-    multi_xml (0.5.5)
+    multi_xml (0.6.0)
     rake (10.5.0)
 
 PLATFORMS
@@ -25,4 +25,4 @@ DEPENDENCIES
   rocketchat-notifier!
 
 BUNDLED WITH
-   1.13.6
+   1.16.1
