@@ -28,7 +28,7 @@ module RocketChatNotifier
       begin
         Rails.logger.debug("\nsending rocket chat notification request to webhook url:\n#{webhook_url}") if verbose_mode == true
 
-        response = JSON.parse HTTParty.post(webhook_url, body: request_body).body
+        response = JSON.parse HTTParty.post(webhook_url, body: request_body.to_json, headers: { 'Content-Type' => 'application/json' }).body
 
         Rails.logger.debug("\nrocket chat response:\n#{response.inspect}\n") if verbose_mode == true
         warn("\nrocket chat notifier - warning: rocket chat could not be notified. rocket chat response: `#{response['error']}`") unless response['success'] || response['success'] == true
